@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 46.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 98%);
+  --secondary-foreground: hsl(222, 84%, 4.9%);
+  --accent: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(222, 84%, 4.9%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --success: hsl(142, 76%, 36%);
+  --success-foreground: hsl(355, 7%, 97%);
+  --warning: hsl(32, 95%, 44%);
+  --warning-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222, 84%, 4.9%);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17.5%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17.5%);
+  --input: hsl(217, 32%, 17.5%);
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(217, 32%, 17.5%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17.5%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --success: hsl(142, 76%, 36%);
+  --success-foreground: hsl(355, 7%, 97%);
+  --warning: hsl(32, 95%, 44%);
+  --warning-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(212, 12%, 87%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-slate-50 text-slate-700;
+  }
+}
+
+/* Custom utility classes for expense tracker colors */
+.text-success {
+  color: hsl(142, 76%, 36%);
+}
+
+.text-danger {
+  color: hsl(0, 84%, 60%);
+}
+
+.bg-success {
+  background-color: hsl(142, 76%, 36%);
+}
+
+.bg-danger {
+  background-color: hsl(0, 84%, 60%);
+}
+
+.border-success {
+  border-color: hsl(142, 76%, 36%);
+}
+
+.border-danger {
+  border-color: hsl(0, 84%, 60%);
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: hsl(221, 83%, 48%);
+}
